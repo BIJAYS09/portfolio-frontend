@@ -1,33 +1,6 @@
-import { useState } from "react";
 import profileImg from "../profile.jpg";
 
-
 export default function ProfileHeader() {
-  // 🔹 States for Playground
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-
-  // 🔹 Function that talks to your Flask backend
-  const runPrompt = async () => {
-    if (!prompt.trim()) {
-      setResponse("⚠️ Please ask something about me.");
-      return;
-    }
-
-    try {
-      const res = await fetch("https://portfolio-backend-bje5.onrender.com/api/ask", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: prompt }),
-      });
-
-      const data = await res.json();
-      setResponse(data.answer);
-    } catch (error) {
-      setResponse("❌ Backend not reachable. Start your Flask server.");
-    }
-  };
-
   return (
     <div className="profile-header-wrapper">
       <div className="profile-header">
@@ -49,9 +22,8 @@ export default function ProfileHeader() {
             </p>
 
             <p className="profile-summary">
-              AI-focused software engineer with experience in Generative AI, RAG systems,
-              NLP, and full-stack development. Passionate about building intelligent systems
-              that combine machine learning and scalable engineering.
+              Problem-solving ML / AI Engineer with a strong full-stack engineering background and a Master’s in Data Science. Hands-on experience in Generative AI, NLP, RAG, and multi-agent
+AI systems, gained through applied research, projects, and working-student roles, with a strong focus on production-ready, scalable software.
             </p>
 
             <div className="profile-links">
@@ -69,33 +41,6 @@ export default function ProfileHeader() {
             </div>
           </div>
         </div>
-
-        {/* RIGHT BLOCK – REAL LLM PLAYGROUND */}
-        <div className="header-playground">
-          <div className="playground-title">🧪 Mini LLM Playground</div>
-
-          <div className="playground-body">
-            {/* LEFT: Input */}
-            <div className="playground-left">
-              <textarea
-                className="playground-input"
-                placeholder="Ask something like: Where did you study?"
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
-              />
-
-              <button className="playground-run" onClick={runPrompt}>
-                Ask My AI
-              </button>
-            </div>
-
-            {/* RIGHT: Output */}
-            <div className="playground-output">
-              {response || "Ask me anything about my education, skills, experience, or location."}
-            </div>
-          </div>
-        </div>
-
 
       </div>
     </div>
