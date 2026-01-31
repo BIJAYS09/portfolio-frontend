@@ -22,8 +22,7 @@ export default function ProfileHeader() {
             </p>
 
             <p className="profile-summary">
-              Problem-solving ML / AI Engineer with a strong full-stack engineering background and a Master’s in Data Science. Hands-on experience in Generative AI, NLP, RAG, and multi-agent
-AI systems, gained through applied research, projects, and working-student roles, with a strong focus on production-ready, scalable software.
+              Problem-solving ML / AI Engineer with a strong full-stack engineering background and a Master’s in Data Science. Hands-on experience in Generative AI, NLP, RAG, and multi-agent AI systems, gained through applied research, projects, and working-student roles, with a strong focus on production-ready, scalable software.
             </p>
 
             <div className="profile-links">
@@ -41,6 +40,22 @@ AI systems, gained through applied research, projects, and working-student roles
             </div>
           </div>
         </div>
+
+        {/* RIGHT BLOCK – STATUS CARD */}
+        <div className="profile-status-card">
+          <span className="status-badge">
+            <span className="availability-dot"></span>
+            Open to Opportunities
+          </span>
+          <div className="status-accent">
+            <p>Applied AI / ML Engineer</p>
+            <p>Generative AI Systems</p>
+            <p>Production AI Development</p>
+            <p>RAG & Agent-Based Systems</p>
+            <p>Scalable AI Backend & APIs</p>
+          </div>
+        </div>
+
 
       </div>
     </div>
