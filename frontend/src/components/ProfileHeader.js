@@ -39,22 +39,23 @@ export default function ProfileHeader() {
               <a href="mailto:bijays09@gmail.com">Email</a>
             </div>
           </div>
-        </div>
-
-        {/* RIGHT BLOCK – STATUS CARD */}
-        <div className="profile-status-card">
-          <span className="status-badge">
-            <span className="availability-dot"></span>
-            Open to Opportunities
-          </span>
-          <div className="status-accent">
-            <p>Applied AI / ML Engineer</p>
-            <p>Generative AI Systems</p>
-            <p>Production AI Development</p>
-            <p>RAG & Agent-Based Systems</p>
-            <p>Scalable AI Backend & APIs</p>
+          {/* RIGHT BLOCK – STATUS CARD */}
+          <div className="profile-status-card">
+            <span className="status-badge">
+              <span className="availability-dot"></span>
+              Open to Opportunities
+            </span>
+            <div className="status-accent">
+              <p>Applied AI / ML Engineer</p>
+              <p>Generative AI Systems</p>
+              <p>Production AI Development</p>
+              <p>RAG & Agent-Based Systems</p>
+              <p>Scalable AI Backend & APIs</p>
+            </div>
           </div>
         </div>
+
+
 
 
       </div>

@@ -248,6 +248,7 @@ display: flex;
   flex-direction: column;
   gap: 6px;
   text-align: center;
+  margin: auto;
 }
 
 .profile-right h1 {
