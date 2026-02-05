@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://BIJAYS09.github.io/portfolio",
+  "homepage": "https://BIJAYS09.github.io/portfolio-frontend",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
